@@ -1,5 +1,6 @@
 import { Header } from './components/Header'
 import { FeatureCard } from './components/FeatureCard'
+import { SettingsForm } from './components/SettingsForm'
 
 const features = [
   {
@@ -102,6 +103,16 @@ function App() {
                 </span>
               ))}
             </div>
+          </div>
+        </section>
+
+        <section id="settings" className="border-t border-white/10 px-6 py-20">
+          <div className="mx-auto max-w-2xl">
+            <h2 className="mb-2 text-3xl font-bold text-white">Settings</h2>
+            <p className="mb-10 text-slate-400">
+              Manage your profile, preferences, and notification settings.
+            </p>
+            <SettingsForm />
           </div>
         </section>
 
